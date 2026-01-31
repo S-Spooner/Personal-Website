@@ -980,6 +980,130 @@ h1, h2, h3, h4 {
 }
 
 /* ============================================
+   Dark Mode Toggle Button
+   ============================================ */
+.theme-toggle {
+    background: none;
+    border: 1.5px solid var(--color-border);
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--transition), border-color var(--transition), background-color var(--transition);
+    margin-left: var(--space-sm);
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    background-color: var(--color-accent-light);
+}
+
+.theme-toggle .icon-sun {
+    display: none;
+}
+
+.theme-toggle .icon-moon {
+    display: block;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+    display: block;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+    display: none;
+}
+
+/* ============================================
+   Dark Mode Theme
+   ============================================ */
+[data-theme="dark"] {
+    --color-bg: #121a2e;
+    --color-bg-alt: #1a2340;
+    --color-text: #e2e8f0;
+    --color-text-secondary: #a0aec0;
+    --color-text-muted: #718096;
+    --color-accent: #5b9cf0;
+    --color-accent-hover: #7db4ff;
+    --color-accent-light: rgba(91, 156, 240, 0.12);
+    --color-accent-gradient: linear-gradient(135deg, #5b9cf0, #7db4ff);
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-card-bg: #1e2a45;
+    --color-card-shadow: rgba(0, 0, 0, 0.3);
+    --color-warm: #e0aa4f;
+    --color-green: #3dbb88;
+    --color-green-light: rgba(61, 187, 136, 0.12);
+}
+
+[data-theme="dark"] .nav {
+    background-color: rgba(18, 26, 46, 0.92);
+    border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .nav.scrolled {
+    background-color: rgba(18, 26, 46, 0.97);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .nav-links {
+    background-color: rgba(18, 26, 46, 0.98);
+}
+
+[data-theme="dark"] .hero-wave svg path {
+    fill: var(--color-bg);
+}
+
+[data-theme="dark"] .wave-divider svg path {
+    fill: var(--color-bg-alt);
+}
+
+[data-theme="dark"] .wave-divider--flip svg path {
+    fill: var(--color-bg);
+}
+
+[data-theme="dark"] .stats-bar {
+    background: var(--color-card-bg);
+    border-bottom-color: var(--color-border);
+}
+
+[data-theme="dark"] .timeline-date {
+    color: #fff;
+}
+
+[data-theme="dark"] .timeline-marker {
+    border-color: var(--color-bg);
+}
+
+[data-theme="dark"] .blog-card + .blog-card {
+    border-top-color: var(--color-border);
+}
+
+[data-theme="dark"] #contact {
+    background: linear-gradient(145deg, #0a1225 0%, #132040 100%);
+}
+
+[data-theme="dark"] .footer {
+    background-color: #080e1c;
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .theme-toggle {
+    border-color: rgba(255, 255, 255, 0.15);
+    color: var(--color-text-secondary);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    color: var(--color-warm);
+    border-color: var(--color-warm);
+    background-color: rgba(224, 170, 79, 0.1);
+}
+
+/* ============================================
    Animations (fade-in on scroll)
    ============================================ */
 .fade-in {
