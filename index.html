@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Spooner — Portfolio</title>
+    <meta name="description" content="Personal portfolio website of S. Spooner. Developer, creator, and technologist.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">S. Spooner</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">S. Spooner</h1>
+                <p class="hero-tagline">Developer, creator, and technologist building things that matter.</p>
+                <p class="hero-description">
+                    I craft thoughtful digital experiences and write about technology,
+                    software development, and the future of the web.
+                </p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a developer and technologist passionate about building software
+                            that solves real problems. With a focus on clean code and thoughtful
+                            design, I create digital experiences that are both functional and
+                            elegant.
+                        </p>
+                        <p>
+                            My work spans full-stack development, from crafting responsive front-end
+                            interfaces to architecting robust back-end systems. I believe in the power
+                            of technology to improve lives and am driven by curiosity and a desire to
+                            continuously learn and grow.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me exploring new technologies,
+                            contributing to open source, or writing about what I've learned along the way.
+                        </p>
+                    </div>
+                    <div class="about-skills">
+                        <h3>Technologies I work with</h3>
+                        <ul class="skills-list">
+                            <li>JavaScript / TypeScript</li>
+                            <li>React / Next.js</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>HTML &amp; CSS</li>
+                            <li>PostgreSQL</li>
+                            <li>Git &amp; GitHub</li>
+                            <li>Cloud Services (AWS)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="work">
+            <div class="container">
+                <h2 class="section-title">Featured Work</h2>
+                <div class="work-grid">
+                    <article class="work-card">
+                        <div class="work-card-content">
+                            <span class="work-card-label">Project</span>
+                            <h3 class="work-card-title">Project Alpha</h3>
+                            <p class="work-card-description">
+                                A full-stack web application built with modern technologies.
+                                Features real-time data processing, responsive design, and
+                                an intuitive user interface that serves thousands of users.
+                            </p>
+                            <div class="work-card-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="work-card-links">
+                                <a href="#" class="work-link">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-card-content">
+                            <span class="work-card-label">Open Source</span>
+                            <h3 class="work-card-title">DevToolkit</h3>
+                            <p class="work-card-description">
+                                An open-source collection of developer utilities and tools
+                                that streamlines common development workflows. Used by
+                                developers worldwide to boost productivity.
+                            </p>
+                            <div class="work-card-tech">
+                                <span>TypeScript</span>
+                                <span>CLI</span>
+                                <span>npm</span>
+                            </div>
+                            <div class="work-card-links">
+                                <a href="#" class="work-link">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-card-content">
+                            <span class="work-card-label">Side Project</span>
+                            <h3 class="work-card-title">DataViz Dashboard</h3>
+                            <p class="work-card-description">
+                                An interactive data visualization dashboard that transforms
+                                complex datasets into clear, actionable insights through
+                                beautiful charts and graphs.
+                            </p>
+                            <div class="work-card-tech">
+                                <span>Python</span>
+                                <span>D3.js</span>
+                                <span>Flask</span>
+                            </div>
+                            <div class="work-card-links">
+                                <a href="#" class="work-link">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Senior Developer</h3>
+                                <span class="timeline-date">2022 &mdash; Present</span>
+                            </div>
+                            <p class="timeline-company">Tech Company</p>
+                            <p class="timeline-description">
+                                Leading development of core platform features, mentoring junior
+                                developers, and driving technical architecture decisions. Focused
+                                on building scalable, maintainable systems.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Full-Stack Developer</h3>
+                                <span class="timeline-date">2019 &mdash; 2022</span>
+                            </div>
+                            <p class="timeline-company">Software Studio</p>
+                            <p class="timeline-description">
+                                Built and maintained multiple client-facing web applications.
+                                Collaborated with design teams to deliver polished user experiences
+                                and implemented CI/CD pipelines for reliable deployments.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Junior Developer</h3>
+                                <span class="timeline-date">2017 &mdash; 2019</span>
+                            </div>
+                            <p class="timeline-company">Web Agency</p>
+                            <p class="timeline-description">
+                                Started my professional career building responsive websites and
+                                web applications. Gained experience across the full development
+                                stack and developed a strong foundation in modern web technologies.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="blog">
+            <div class="container">
+                <h2 class="section-title">Latest Writing</h2>
+                <p class="section-subtitle">Thoughts and reflections on technology, development, and building for the web.</p>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <span class="blog-card-date">January 2026</span>
+                        <h3 class="blog-card-title">
+                            <a href="blog.html">Building for the Future: Modern Web Architecture</a>
+                        </h3>
+                        <p class="blog-card-excerpt">
+                            Exploring the latest trends in web architecture and how they shape
+                            the way we build applications today.
+                        </p>
+                    </article>
+
+                    <article class="blog-card">
+                        <span class="blog-card-date">December 2025</span>
+                        <h3 class="blog-card-title">
+                            <a href="blog.html">The Developer's Guide to AI-Assisted Coding</a>
+                        </h3>
+                        <p class="blog-card-excerpt">
+                            How artificial intelligence is transforming the development workflow
+                            and what it means for the future of software engineering.
+                        </p>
+                    </article>
+
+                    <article class="blog-card">
+                        <span class="blog-card-date">November 2025</span>
+                        <h3 class="blog-card-title">
+                            <a href="blog.html">Clean Code Principles That Actually Matter</a>
+                        </h3>
+                        <p class="blog-card-excerpt">
+                            A practical look at code quality principles that make a real
+                            difference in production applications.
+                        </p>
+                    </article>
+                </div>
+                <div class="blog-cta">
+                    <a href="blog.html" class="btn btn-secondary">Read All Posts &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-text">
+                        I'm always interested in hearing about new projects, opportunities,
+                        and ideas. Whether you want to collaborate, have a question, or just
+                        want to say hello, feel free to reach out.
+                    </p>
+                    <a href="mailto:hello@example.com" class="btn btn-primary btn-large">Say Hello</a>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 S. Spooner. All rights reserved.</p>
+                <p class="footer-note">Built with care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
