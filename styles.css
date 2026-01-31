@@ -630,25 +630,60 @@ h1, h2, h3, h4 {
 }
 
 .blog-card {
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    background: var(--color-card-bg);
+    overflow: hidden;
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.blog-card-banner {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.blog-card-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.12;
+    background-image: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.3) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 50%);
+}
+
+.blog-card-banner--concussion {
+    background: linear-gradient(135deg, #4a6cf7 0%, #6e3bea 50%, #9b59b6 100%);
+}
+
+.blog-card-banner--prevention {
+    background: linear-gradient(135deg, #2a9d6e 0%, #27ae60 50%, #1abc9c 100%);
+}
+
+.blog-card-banner--ai {
+    background: linear-gradient(135deg, #1e56a0 0%, #2980b9 50%, #00b4d8 100%);
+}
+
+.blog-card-banner--military {
+    background: linear-gradient(135deg, #0f2440 0%, #1a3a5c 50%, #c9953c 100%);
+}
+
+.blog-card-banner--sideline {
+    background: linear-gradient(135deg, #e74c3c 0%, #e67e22 50%, #f39c12 100%);
+}
+
+.blog-card-body {
     padding: var(--space-md);
-    border-radius: var(--radius);
-    border: 1px solid transparent;
-    transition: background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
 .blog-card:hover {
-    background-color: var(--color-card-bg);
-    border-color: var(--color-border);
-    box-shadow: 0 4px 12px var(--color-card-shadow);
-}
-
-.blog-card + .blog-card {
-    border-top: 1px solid var(--color-border);
-}
-
-.blog-card:hover + .blog-card,
-.blog-card + .blog-card:hover {
-    border-top-color: transparent;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px var(--color-card-shadow);
+    border-color: rgba(30, 86, 160, 0.15);
 }
 
 .blog-card-date {
@@ -1077,10 +1112,6 @@ h1, h2, h3, h4 {
 
 [data-theme="dark"] .timeline-marker {
     border-color: var(--color-bg);
-}
-
-[data-theme="dark"] .blog-card + .blog-card {
-    border-top-color: var(--color-border);
 }
 
 [data-theme="dark"] #contact {
