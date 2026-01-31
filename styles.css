@@ -25,8 +25,8 @@
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
 
-    --max-width: 720px;
-    --max-width-wide: 960px;
+    --max-width: 1080px;
+    --max-width-wide: 1200px;
     --nav-height: 64px;
 
     --space-xs: 0.5rem;
@@ -396,8 +396,9 @@ h1, h2, h3, h4 {
    ============================================ */
 .about-content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: var(--space-xl);
+    align-items: start;
 }
 
 .about-text p {
@@ -447,7 +448,7 @@ h1, h2, h3, h4 {
    ============================================ */
 .work-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
 }
 
@@ -624,7 +625,7 @@ h1, h2, h3, h4 {
    ============================================ */
 .blog-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
 }
 
@@ -701,7 +702,7 @@ h1, h2, h3, h4 {
 
 .blog-list {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
 }
 
@@ -909,7 +910,7 @@ h1, h2, h3, h4 {
    ============================================ */
 .focus-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-sm);
 }
 
@@ -1079,8 +1080,20 @@ h1, h2, h3, h4 {
         font-size: 2rem;
     }
 
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
     .focus-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
     }
 
     .wave-divider svg {
@@ -1135,7 +1148,7 @@ h1, h2, h3, h4 {
     }
 
     .focus-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .hero-photo-placeholder {
